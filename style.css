@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: lightblue;
+    color: black;
+}
+
+h1 {
+    background-color: rgb(142, 142, 255);
+    color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.281);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.377);
+}
+
+main {
+    background-color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.281);
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
+}
+
+main > p > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+main > p > a:hover {
+    color: red;
+}
+
+main > ul {
+    background-color: rgba(173, 216, 230, 0.651);
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.281);
+    padding: 20px;
+}
+
+main > ul > li > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+main > ul > li > a:hover {
+    color: red;
+}
+
+footer {
+    background-color: rgb(142, 142, 255);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.281);
+
+}
+
+footer > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
