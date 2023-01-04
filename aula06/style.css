@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightblue;
+    color: black;
+}
+
+h1 {
+    background-color: rgb(115, 115, 250);
+    color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.329);
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+a.voltar {
+    background-color: rgb(142, 142, 255);
+    padding: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.281);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 50%;
+}
