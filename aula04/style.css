@@ -24,4 +24,6 @@ a.voltar {
     font-weight: bold;
     text-decoration: none;
     margin: 50%;
+    display: inline-block;
+    align-items: flex-end;
 }

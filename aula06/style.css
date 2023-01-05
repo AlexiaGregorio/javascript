@@ -24,4 +24,6 @@ a.voltar {
     font-weight: bold;
     text-decoration: none;
     margin: 50%;
+    display: inline-block; /*para deixar o botão na parte de baixo da pagina*/
+    align-items: flex-end;/*esse também*/
 }
