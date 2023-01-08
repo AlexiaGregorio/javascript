@@ -5,35 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiros passos com DOM</title>
-    <link rel="stylesheet" href="../aula04/style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <h1>Iniciando estudos com DOM</h1>
-    <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div id="msg">Clique em mim</div>
-    <script>
-        var corpo = window.document.body
-        var p1 =  window.document.getElementsByTagName('p')[1]//o 0 significa que é o primeiro paragrafo(p) que você está selecionando 
-
-        /*window.document.write('Está escrito assim:  ' + p1.innerHTML)
-        corpo.style.color = 'white'
-        corpo.style.background = 'black'
-        p1.style.color = 'blue'
+    <main>
+        <p>Aqui vai o resultado</p>
+        <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+        <div id="msg">Clique em mim</div>
+        <script>
+            var corpo = window.document.body
+            var p1 =  window.document.getElementsByTagName('p')[1]//o 0 significa que é o primeiro paragrafo(p) que você está selecionando
+            /*window.document.write('Está escrito assim:  ' + p1.innerHTML)
+            corpo.style.color = 'white'
+            corpo.style.background = 'black'
+            p1.style.color = 'blue'
         
-        da pra mudar as cores assim, deixei em comentário para não alterar
-    document.alert(p1.innerHTML)*/
+            da pra mudar as cores assim, deixei em comentário para não alterar
+        document.alert(p1.innerHTML)*/
+        /*var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        //d.innerText = 'Estou aguardando...'
+        window.document.getElementById('msg').innerText = 'Olá'*/
+        var d = window.document.querySelector('div#msg') //usa linguagem CSS, por isso div#msg, o # é de id
+        d.style.background = 'blue'
+        </script>
+    </main>
 
-    /*var d = window.document.getElementById('msg')
-    d.style.background = 'green'
-    //d.innerText = 'Estou aguardando...'
-    window.document.getElementById('msg').innerText = 'Olá'*/
-
-    var d = window.document.querySelector('div#msg') //usa linguagem CSS, por isso div#msg, o # é de id
-    d.style.background = 'blue'
-
-    </script>
+    <footer>Site criado por <a href="https://github.com/alexiagregorio" target="_blank">Alexia Gregorio</a> para o <a href="https://www.cursoemvideo.com/" target="_blank">Curso em Video</a>.</footer>
 
 
     <a 
