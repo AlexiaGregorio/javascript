@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <link rel="stylesheet" href="../aula04/style.css">
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var p1 =  window.document.getElementsByTagName('p')[1]//o 0 significa que é o primeiro paragrafo(p) que você está selecionando 
+
+        /*window.document.write('Está escrito assim:  ' + p1.innerHTML)
+        corpo.style.color = 'white'
+        corpo.style.background = 'black'
+        p1.style.color = 'blue'
+        
+        da pra mudar as cores assim, deixei em comentário para não alterar
+    document.alert(p1.innerHTML)*/
+
+    /*var d = window.document.getElementById('msg')
+    d.style.background = 'green'
+    //d.innerText = 'Estou aguardando...'
+    window.document.getElementById('msg').innerText = 'Olá'*/
+
+    var d = window.document.querySelector('div#msg') //usa linguagem CSS, por isso div#msg, o # é de id
+    d.style.background = 'blue'
+
+    </script>
+
+
+    <a 
+class="voltar" href="../index.html">Voltar</a>
+</body>
+</html>
