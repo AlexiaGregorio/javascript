@@ -7,9 +7,9 @@
 body {
     background-color: lightblue;
     color: black;
-    position: fixed;
-    height: 100vh;
-    width: 98vw;
+    position: fixed; /*para tirar a scrollbar*/
+    height: 100vh; /*para tirar a scrollbar*/
+    width: 98vw; /*para tirar a scrollbar*/
 }
 
 h1 {
