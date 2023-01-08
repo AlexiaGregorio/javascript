@@ -7,7 +7,9 @@
 body {
     background-color: lightblue;
     color: black;
-
+    position: fixed;
+    height: 100vh;
+    width: 98vw;
 }
 
 h1 {
