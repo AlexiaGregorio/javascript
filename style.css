@@ -7,6 +7,7 @@
 body {
     background-color: lightblue;
     color: black;
+
 }
 
 h1 {
@@ -70,6 +71,10 @@ footer > a {
     color: white;
 }
 
+footer > a:hover {
+    color: blueviolet;
+}
+
 a.voltar {
     background-color: rgb(142, 142, 255);
     padding: 5px;
@@ -81,4 +86,5 @@ a.voltar {
     margin: 50%;
     display: inline-block; /*para deixar o botão na parte de baixo da pagina*/
     align-items: flex-end;/*esse também*/
+    margin-top: 50px;
 }
