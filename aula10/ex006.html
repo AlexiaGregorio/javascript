@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        div#area {
+            font: normal 20pt arial;
+            background-color: rgba(2, 206, 2, 0.781);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Passe o mouse e clique:</h1>
+    <main>
+        <!--Dava pra ser assim também:
+
+            <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+                -->
+        <div id="area">
+            Interaja...
+        </div>
+
+        <script>
+        var a = window.document.getElementById('area') //quando voce coloca o var aqui fora da funtion, voce pode chamar o "a" em qualquer uma das outras functions. Porém tem algum problema com isso que o professor ainda não explicou.
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+            function clicar() {
+                a.innerText = 'Clicou!'
+                a.style.background = 'red'
+            }
+
+            function entrar() {
+                a.innerText = 'Entrou'
+            }
+
+            function sair(){
+                a.innerText = 'Saiu!'
+                a.style.background = 'green'
+            }
+        </script>
+
+    </main>
+
+
+    
+    
+    
+    <footer>Site criado por <a href="https://github.com/alexiagregorio" target="_blank">Alexia Gregorio</a> para o <a href="https://www.cursoemvideo.com/" target="_blank">Curso em Video</a>.</footer>
+
+
+    <a 
+class="voltar" href="../index.html">Voltar</a>
+
+</body>
+</html>
