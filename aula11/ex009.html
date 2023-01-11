@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Países</h1>
+    <main>
+        Nome do seu país de origem aqui: <input type="text" name="pais" id="pais">
+        <input type="button" value="Verificar" onclick = "verificar()">
+        <div id="res"></div>
+
+        <script>
+            function verificar() {
+                var p = window.document.querySelector('input#pais')
+                var res = window.document.querySelector('div#res')
+                var pais = Object(p.value)
+                res.innerHTML = `Seu país é ${p}`
+            }
+        </script>
+
+
+
+    </main>
+
+
+
+    <footer>Site criado por <a href="https://github.com/alexiagregorio" target="_blank">Alexia Gregorio</a> para o <a href="https://www.cursoemvideo.com/" target="_blank">Curso em Video</a>.</footer>
+
+
+    <a 
+class="voltar" href="../index.html">Voltar</a>
+</body>
+</html>
