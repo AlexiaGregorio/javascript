@@ -19,7 +19,7 @@
             function verificar() {
                 var p = window.document.querySelector('input#pais')
                 var res = window.document.querySelector('div#res')
-                var pais = Object(p.value)
+                var pais = Object(p) //acho que o erro está aqui
                 res.innerHTML = `Seu país é ${p}`
             }
         </script>
